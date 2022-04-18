@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book a demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navigation-bar">
+        <div id="navigation-container">
+            <img class="logo" src="./images/logo.png">
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="heading-logo">
+            <i class="calender fa-solid fa-calendar-days"></i>
+        </div>
+        <form id="form" name="myform">
+            <div class="title">Book a Demo</div>
+            <p>Help us customize your demo by answering the following questions below.</p>
+
+            <div class="form-control">
+                <label class="field-title" for="name" id="label-name">
+                    Business Email
+                </label>
+                <div class="input-box">
+                    <input type="text" name="" id="email" placeholder="Enter Email Address" onkeydown="validation()"
+                        required>
+                    <span id="text"></span>
+                </div>
+
+
+                <label class="field-title">
+                    Business Size
+                </label>
+                <div class="select-container">
+                    <div class="select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <input type="radio" class="radio" id="10" name="category" />
+                                <label for="10">1-10</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="15" name="category" />
+                                <label for="15">11-15</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="100" name="category" />
+                                <label for="100">51-100</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="250" name="category" />
+                                <label for="250">101-250</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="1000" name="category" />
+                                <label for="1000">250-1000</label>
+                            </div>
+
+                            <div class="option">
+                                <input type="radio" class="radio" id="1001" name="category" />
+                                <label for="1001">1000+</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            Select Size<span><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <label id="select-text"></label>
+                    </div>
+
+                </div>
+                <label class="radio-field-title">Would is the most important thing to you in a solution?</label>
+                <br />
+                <div class="some-class">
+
+                    <label>
+                        <input class="radiotype" type="radio" value="Real-time Analytics" id="real" name="radio" />
+                        <span class="container">Real-time Analytics</span>
+                    </label>
+                    <label>
+                        <input class="radiotype" type="radio" value="Scalability" id="scale" name="radio" />
+                        <span class="container">Scalability</span>
+
+                    </label>
+
+                </div>
+                <br />
+                <div class="some-class">
+                    <label>
+                        <input class="radiotype" value="Query Response Time" type="radio" id="query" name="radio" />
+                        <span class="container">Query Response Time</span>
+                    </label>
+                    <label>
+                        <input class="radiotype" value="Document storage" type="radio" id="document" name="radio" />
+                        <span class="container">Document storage</span>
+                    </label>
+
+                </div>
+
+                <div class="some-class">
+                    <label>
+                        <input class="radiotype" type="radio" value="High Concurrency" id="high" name="radio" />
+                        <span class="container">High Concurrency</span>
+                    </label>
+                    <label>
+                        <input class="radiotype" type="radio" value="Full Text Search" id="full" name="radio" />
+                        <span class="container">Full Text Search</span>
+
+                    </label>
+
+                </div>
+                <br />
+                <div class="some-class">
+                    <label>
+                        <input class="radiotype" value="Fast data ingest" type="radio" id="fast" name="radio" />
+                        <span class="container">Fast data ingest</span>
+                    </label>
+                    <label>
+                        <input class="radiotype" value="price" type="radio" id="price" name="radio" />
+                        <span class="container">Price</span>
+                    </label>
+
+                </div>
+                <label id="error-text"></label>
+                <button id="mysubmit" type="submit" value="submit" class="button" onClick="check();">Continue to
+                    Schedule a Time</button>
+
+
+            </div>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
