@@ -8,7 +8,7 @@
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 
 ## Deployed on GH-Pages
-
+https://developer-soni.github.io/Book-Demo-Website-SingleStore/
 
 
 ## Description
